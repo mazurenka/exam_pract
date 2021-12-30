@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+    const  [number, setNumber] = useState<number>( 0)
+    const numberPlus = () => {setNumber(number + 1)}
+
+    return (
+        <div className={'App'}>
+            <div className={'numBlock'}>
+                <div>{number}</div>
+            </div>
+            <div className={'buttonBlock'}>
+                <button onClick={numberPlus} disabled={(number === 5)}>inc</button>
+                <button onClick={() => {setNumber(0)}} disabled={(number === 0)}>reset</button>
+            </div>
+        </div>
+    )
+}
 export default App;
+
+
+
+
+
