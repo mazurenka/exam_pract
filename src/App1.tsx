@@ -1,7 +1,11 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 function App1() {
-    const [count, setCount] = useState<number>(0)
+    const [count, setCount] = useState<number>(1)
+    debugger
+    useEffect(() => {
+        document.title = `You pressed ${count} times`;
+    })
 
     return (
         <div>
