@@ -5,7 +5,7 @@ function App() {
 
     const [number, setNumber] = useState<number>(0)
     const numberPlus = () => {
-        setNumber(number + 1)
+            setNumber(number + 1)
     }
 
     return (

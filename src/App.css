@@ -4,6 +4,7 @@
     padding-bottom: 200px;
     margin: auto;
     background: #2c2c36;
+    border: aqua;
 }
 
 .numBlock {
@@ -13,16 +14,11 @@
     font-weight: 700;
 }
 .numBlockRed {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin: auto;
-    background: #2c2c36;
     padding-left: 510px;
     color: red;
     font-size: 90px;
     font-weight: 700;
 }
-
 
 .buttonInc {
     font-weight: 900;
@@ -30,6 +26,8 @@
     padding-left: 210px;
     font-size: 50px;
     background: aqua;
+    border-radius: 15px;
+
 }
 
 .buttonReset {
@@ -38,4 +36,5 @@
     padding-left: 210px;
     font-size: 50px;
     background: aqua;
+    border-radius: 15px;
 }
