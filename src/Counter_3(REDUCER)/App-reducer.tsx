@@ -1,5 +1,5 @@
 import React, {useReducer} from 'react';
-import './App.css';
+import '../Counter_1/App.css';
 
 type ActionType = {
     type: string

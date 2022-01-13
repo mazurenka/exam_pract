@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css';
+import '../Counter_1/App.css';
 
 function App() {
 
